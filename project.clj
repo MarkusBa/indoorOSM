@@ -5,6 +5,9 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [org.clojure/core.typed "0.2.84"]
+                 [korma "0.4.0"]
+                 [org.clojure/java.jdbc "0.3.5"] ;; workaround for korma
+                 [org.postgresql/postgresql "9.4-1201-jdbc41"]
                  [com.theoryinpractise.frege/frege "3.21.586-g026e8d7"]
                  [compojure "1.1.8"]
                  [http-kit "2.1.16"]
