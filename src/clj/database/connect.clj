@@ -3,10 +3,7 @@
             [korma.core :as k]
             [korma.db :refer [defdb postgres]]))
 
-;;(def db-spec (cf/load-props "resources/db.properties"))
-(def db-spec {:db "indoor"
-              :user "markus"
-              :password "xxxx"} )
+(def db-spec (cf/load-props "resources/db.properties"))
 
 (defdb db (postgres db-spec))
 
