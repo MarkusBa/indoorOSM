@@ -9,7 +9,7 @@ CREATE TABLE item (
   y integer,
   id_parent bigserial references item (id) ON DELETE CASCADE ,
   filename varchar(255) DEFAULT NULL,
-  attachment BYTEA,
+  theblop BYTEA,
   ts timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   deleted boolean
 );

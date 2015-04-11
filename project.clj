@@ -12,6 +12,7 @@
   :plugins [[lein-fregec "0.1.0-SNAPSHOT"]
             [lein-typed "0.3.5"]]
   :frege-source-paths ["src/frege"]
+  :java-source-paths ["src/java"]
   :core.typed {:check [config.parse]}
   :source-paths ["src/clj"]
   )
