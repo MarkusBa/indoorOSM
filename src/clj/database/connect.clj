@@ -3,7 +3,7 @@
             [korma.core :as k]
             [korma.db :refer [defdb postgres]]))
 
-(def db-spec (cf/load-props "resources/db.properties"))
+(def db-spec (cf/load-config "resources/config.clj"))
 
 (defdb db (postgres db-spec))
 
