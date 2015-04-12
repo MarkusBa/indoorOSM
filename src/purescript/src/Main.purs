@@ -34,6 +34,18 @@ instance itemToJSON :: ToJSON Item where
     toJSON (Item { name = b1}) =
         object ["name" .= b1]
 
+{-
+data Items = ItemCons [Item]
+
+instance itemsFromJSON :: FromJSON Items where
+    parseJSON (JObject o) = do
+            liftM1 ItemCons o
+    parseJSON _ = fail "Items parse fail"
+
+instance itemsToJSON :: ToJSON Items where
+    toJSON (ItemCons items) = map toJSON items
+-}
+
 itemName (Item {name = name}) =
   name
 
