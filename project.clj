@@ -3,8 +3,8 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.6.0"]
-                 [org.clojure/core.typed "0.2.84"]
+  :dependencies [[org.clojure/clojure "1.7.0-alpha6"]
+                 [org.clojure/core.typed "0.2.87"]
                  [korma "0.4.0"]
                  [org.clojure/java.jdbc "0.3.5"] ;; workaround for korma
                  [org.postgresql/postgresql "9.4-1201-jdbc41"]

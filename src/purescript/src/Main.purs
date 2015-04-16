@@ -43,7 +43,7 @@ instance itemsFromJSON :: FromJSON Items where
     parseJSON _ = fail "Items parse fail"
 
 instance itemsToJSON :: ToJSON Items where
-    toJSON (ItemCons items) = map toJSON items
+    toJSON (ItemCons items) = object [map toJSON items]
 -}
 
 itemName (Item {name = name}) =
